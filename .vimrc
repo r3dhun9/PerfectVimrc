@@ -1,3 +1,22 @@
+" Vundle.vim
+set nocompatible              " be iMproved, required
+filetype off                  " required
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+" Plugins
+Plugin 'Valloric/YouCompleteMe'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+" YCM Python3 support
+let g:ycm_python_binary_path='python3.7'
+
 " Settings
 set encoding=utf-8
 set fileencodings=utf-8,big5,gbk,latin1
@@ -27,9 +46,15 @@ if has("statusline")
 	set laststatus=2
 	set statusline=
 	set statusline+=%1*\ %{GetCurrentMode()}\ 
-	set statusline+=%2*\ %F\ 
-	hi User1 cterm=bold ctermbg=DarkBlue cterm=none
+	set statusline+=%2*\ %F
+	set statusline+=%9*\ %=
+	set statusline+=%8*\ 0x%B\ 
+	set statusline+=%7*\ %l
+	set statusline+=%7*\,%c\ 
+	hi User1 cterm=bold ctermbg=66 cterm=none
 	hi User2 ctermbg=none ctermfg=Green
+	hi User8 cterm=bold ctermbg=89 ctermfg=none
+	hi User7 cterm=bold ctermbg=88 ctermfg=none
 endif
 
 " Functions
