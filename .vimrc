@@ -10,6 +10,7 @@ Plugin 'VundleVim/Vundle.vim'
 " Plugins
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'tomasr/molokai'
+Plugin 'jiangmiao/auto-pairs'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -102,10 +103,3 @@ endfunction
 
 " Map
 imap jh <Esc>
-inoremap " ""<left>
-inoremap ' ''<left>
-inoremap ( ()<left>
-inoremap [ []<left>
-inoremap { {}<left>
-inoremap {<CR> {<CR>}<ESC>O
-inoremap {;<CR> {<CR>};<ESC>O
