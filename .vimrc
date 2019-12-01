@@ -16,7 +16,7 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 
 " YCM Python3 support
-let g:ycm_python_binary_path='python3.7'
+let g:ycm_python_binary_path='python'
 
 " Settings
 set encoding=utf-8
